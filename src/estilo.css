@@ -1,0 +1,132 @@
+html{
+    min-height: 100%;
+
+    background-image: url(./imagens/Wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragrafo{
+    position: absolute;
+    padding-top: 600px;
+    width: 600px;
+    
+    color: white;
+    z-index: -1;
+
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 30px;
+}
+
+.botoes{
+    position: absolute;
+    display: flex;
+
+    padding-bottom: 600px;
+    width: 1000px;
+}
+.b1{
+    margin: 0px 660px 0px 50px;
+}
+
+.botoes a{
+    font-weight: bold;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 25px;
+
+    color: white;
+    padding: 20px;
+    transition: 0.5s;
+
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botoes a:hover{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(157,59,59,1) 0%);
+}
+
+.slides{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+
+    overflow: hidden;
+}
+
+.radio{
+    width: 400%;
+    height: 400px;
+
+    display: flex;
+}
+
+.radio input{
+    display: none;
+}
+
+.img{
+    width: 800px;
+    position: relative;
+    transition: 2s;
+}
+
+.img img{
+    width: 100%;
+}
+
+.manual{
+    width: 800px;
+    margin-top: -60px;
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.botao-manual{
+    border: 2px solid red;
+    border-radius: 10px;
+
+    padding: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.botao-manual:not(:last-child){
+    margin-right: 40px;
+}
+
+.botao-manual:hover{
+    background-color: black;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+
+
